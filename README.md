@@ -18,7 +18,7 @@
  public static void main(String []args){
         long sdkappid = 23424434;//您的appid 可在控制台项目详情中查询
         String key = "key";//您的appsign 可在控制台项目详情中查询
-        TLSTokenAPI api = new TLSTokenAPI(sdkappid,key);
+        KuaiShouTokenAPI api = new KuaiShouTokenAPI(sdkappid,key);
         String userId = "43ffdgd4";//用户id
         long expire = 86400L;//代表有效期一天
         String token = api.genToken(userId,expire);
