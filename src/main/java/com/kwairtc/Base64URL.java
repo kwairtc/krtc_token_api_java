@@ -1,4 +1,4 @@
-package com.kuaishou.krtc;
+package com.kwairtc;
 
 import java.util.Base64;
 

@@ -1,4 +1,4 @@
-package com.kuaishou.krtc;
+package com.kwairtc;
 
 import org.json.JSONObject;
 
@@ -11,11 +11,11 @@ import java.util.Arrays;
 import java.util.Base64;
 import java.util.zip.Deflater;
 
-public class KuaiShouTokenAPI {
+public class KwairtcTokenAPI {
     final private long sdkappid;
     final private String key;
 
-    public KuaiShouTokenAPI(long sdkappid, String key) {
+    public KwairtcTokenAPI(long sdkappid, String key) {
         this.sdkappid = sdkappid;
         this.key = key;
     }
@@ -84,7 +84,7 @@ public class KuaiShouTokenAPI {
     public static void main(String []args){
         long sdkappid = 23424434;//您的appid 可在控制台项目详情中查询
         String key = "key";//您的appsign 可在控制台项目详情中查询
-        KuaiShouTokenAPI api = new KuaiShouTokenAPI(sdkappid,key);
+        KwairtcTokenAPI api = new KwairtcTokenAPI(sdkappid,key);
         String userId = "43ffdgd4";//用户id
         long expire = 86400L;//代表有效期一天
         String token = api.genToken(userId,expire);

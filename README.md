@@ -9,7 +9,7 @@
 
 **源码**
 
-直接将KuaiShouTokenAPI，Base64URL 下载到本地使用即可
+直接将KwairtcTokenAPI，Base64URL 下载到本地使用即可
 
 
 
@@ -18,7 +18,7 @@
  public static void main(String []args){
         long sdkappid = 23424434;//您的appid 可在控制台项目详情中查询
         String key = "key";//您的appsign 可在控制台项目详情中查询
-        KuaiShouTokenAPI api = new KuaiShouTokenAPI(sdkappid,key);
+        KwairtcTokenAPI api = new KwairtcTokenAPI(sdkappid,key);
         String userId = "43ffdgd4";//用户id
         long expire = 86400L;//代表有效期一天
         String token = api.genToken(userId,expire);
