@@ -11,11 +11,11 @@ import java.util.Arrays;
 import java.util.Base64;
 import java.util.zip.Deflater;
 
-public class KwairtcTokenAPI {
+public class KRTCTokenAPI {
     final private long sdkappid;
     final private String key;
 
-    public KwairtcTokenAPI(long sdkappid, String key) {
+    public KRTCTokenAPI(long sdkappid, String key) {
         this.sdkappid = sdkappid;
         this.key = key;
     }
@@ -84,7 +84,7 @@ public class KwairtcTokenAPI {
     public static void main(String []args){
         long sdkappid = 23424434;//您的appid 可在控制台项目详情中查询
         String key = "key";//您的appsign 可在控制台项目详情中查询
-        KwairtcTokenAPI api = new KwairtcTokenAPI(sdkappid,key);
+        KRTCTokenAPI api = new KRTCTokenAPI(sdkappid,key);
         String userId = "43ffdgd4";//用户id
         long expire = 86400L;//代表有效期一天
         String token = api.genToken(userId,expire);
